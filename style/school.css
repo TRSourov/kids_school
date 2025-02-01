@@ -13,22 +13,42 @@
     color: rgb(128, 128, 128);
     font-weight: 500;
 }
-
+.cmn_btn{
+    background: rgb(17, 17, 17);
+    color: rgb(255, 255, 255);
+    font-size: 1.25rem;
+    font-weight: 700;
+    padding: 1.25rem 5rem;
+    border: none;
+    border-radius: 12px;
+}
 .sect_title{
     color: rgb(0, 0, 0);
     font-size: 2.875rem;
     font-weight: 700;
+    /* margin-top: 60px; */
 }
 .box_title{
     color: rgb(32, 32, 32);
     font-size: 1.5rem;
     font-weight: 700;
 }
+.grn_button{
+    position:absolute;
+    border-radius: 48px;
+    background: rgb(149, 178, 38);
+    border: none;
+    padding: 12px 15px;
+    margin-top: -1.55rem;
+    margin-left: 3.75rem;
+    color: white;
+}
+
 
 /* nav style */
  nav{
     margin: 0px auto;
-    max-width: 1440px;
+    max-width: 1200px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -92,7 +112,7 @@
 
 .banner{
     display: flex;
-    max-width: 1440px;
+    max-width: 1200px;
     margin: 0 auto;
     align-items: center;
     justify-content: center;
@@ -105,15 +125,7 @@
     font-size: 3.5rem;
     font-weight: 700;  
 }
-.cmn_btn{
-    background: rgb(17, 17, 17);
-    color: rgb(255, 255, 255);
-    font-size: 1.25rem;
-    font-weight: 700;
-    padding: 10px 40px;
-    border: none;
-    border-radius: 12px;
-}
+
 .banner_img img{
     width: 100%;
 }
@@ -121,7 +133,6 @@
 
 .currriculam{
     max-width: 1440px;
-    height: 1000px;
     margin: 0 auto;
     background-image: url(../assets/bg.png);
     background-repeat: no-repeat;
@@ -134,6 +145,7 @@
     
 }
 .curriculum_details{
+    max-width: 1200px;
     display: flex;
     gap: 20px;
     
@@ -194,7 +206,6 @@
 
 .arrow_sign{
     margin-top: 80px;
-    margin-bottom: 60px;
     display: flex;
     gap: 10px;
 }
@@ -227,9 +238,101 @@
 .arrow_left a{
     color: white;
 }
+/* stories style */
 
+.stories{
+    max-width: 1440px;
+    margin: 0 auto;
+    background: url(../assets/bg.png),linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.stories>button{
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+.imgbox_container{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 30px;
+    margin-bottom: 80px;
+}
+.stories h3{
+    text-align: center;
+    padding-top: 60px;
+}
+.bigbox{
+    max-width: 45%;
+    border-radius: 16px;
+}
+.bigbox img{
+    width: 100%;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+.bigbox p{
+    margin-top: 50px;
+    color: rgb(102, 102, 102);
+    font-size: 1rem;
+    font-weight: 500;
+}
+.bigbox button{
+    position:absolute;
+    border-radius: 48px;
+    background: rgb(60, 216, 232);
+    border: none;
+    padding: 15px 18px;
+    margin-top: -50px;
+    margin-left: 60px;
+}
+.bigbox_text{
+    margin-top: -3px;
+    padding: 20px;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+    background: rgb(255, 255, 255);
+    
+}
+.smallboxes{
+    max-width: 54%;
+    /* align-items: center; */
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+.smallbox{
+    max-width: 300px;
+    background-color: white;
+    border-radius: 16px;
+}
+.smallbox_text{
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 10px 20px;
+}
+.prl_btn{
+    position:absolute;
+    border-radius: 48px;
+    background: rgb(93, 88, 240);
+    border: none;
+    padding: 12px 15px;
+    margin-top: -25px;
+    margin-left: 60px;
+    color: white;
+}
 
-
+.smallbox img{
+    width: 100%;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
 
 
 
@@ -293,5 +396,49 @@
     }
     .arrow_sign{
         display: none;
+    }
+    .bigbox{
+        display: none;
+    }
+    .smallboxes{
+        max-width: 100%;
+        padding: 5px;
+    }
+    .cmn_btn{
+        background: rgb(17, 17, 17);
+        color: rgb(255, 255, 255);
+        font-size: 1rem;
+        font-weight: 700;
+        padding: 0.75rem 3rem;
+        border: none;
+        border-radius: 12px;
+    }
+    .grn_button{
+        position:absolute;
+        border-radius: 48px;
+        background: rgb(149, 178, 38);
+        border: none;
+        padding: 12px 15px;
+        margin-top: -1.55rem;
+        margin-left: 1.5rem;
+        font-size: 0.6rem;
+        color: white;
+    }
+    .prl_btn{
+        position:absolute;
+        border-radius: 48px;
+        background: rgb(93, 88, 240);
+        border: none;
+        padding: 12px 15px;
+        margin-top: -1.55rem;
+        margin-left: 1.5rem;
+        font-size: 0.6rem;
+        color: white;
+    }
+    .stories>button{
+        margin-bottom: 40px;
+    }
+    .imgbox_container{
+        margin-bottom: 20px;
     }
 }
