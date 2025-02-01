@@ -5,7 +5,25 @@
     font-family: "Quicksand", serif;
 }
 
+.ptext{
+    font-size: 1.25rem;
+}
+.text{
+    font-size: 1rem;
+    color: rgb(128, 128, 128);
+    font-weight: 500;
+}
 
+.sect_title{
+    color: rgb(0, 0, 0);
+    font-size: 2.875rem;
+    font-weight: 700;
+}
+.box_title{
+    color: rgb(32, 32, 32);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
 
 /* nav style */
  nav{
@@ -15,7 +33,7 @@
     justify-content: center;
     align-items: center;
     justify-content: space-between;
-    /* padding: 20px 0px; */
+    margin-bottom: 20px;
  }
 .school_logo{
    
@@ -70,6 +88,149 @@
     height: 40px;
     display: none;
 }
+/* banner style */
+
+.banner{
+    display: flex;
+    max-width: 1440px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+}
+.banner_text{
+    max-width: 640px;
+}
+.banner_text h1{
+    font-size: 3.5rem;
+    font-weight: 700;  
+}
+.cmn_btn{
+    background: rgb(17, 17, 17);
+    color: rgb(255, 255, 255);
+    font-size: 1.25rem;
+    font-weight: 700;
+    padding: 10px 40px;
+    border: none;
+    border-radius: 12px;
+}
+.banner_img img{
+    width: 100%;
+}
+/* currriculam style */
+
+.currriculam{
+    max-width: 1440px;
+    height: 1000px;
+    margin: 0 auto;
+    background-image: url(../assets/bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    
+}
+.curriculum_details{
+    display: flex;
+    gap: 20px;
+    
+}
+.cur_box1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+    border: 0.94px solid rgb(242, 232, 255);
+    border-radius: 18px;
+    background: linear-gradient(180.00deg, rgb(222, 245, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+    max-width: 32%;
+}
+.cur_box2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+    border: 0.94px solid rgb(255, 244, 220);
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    border-radius: 18px;
+    background: linear-gradient(180.00deg, rgb(255, 244, 220),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+    max-width: 32%;
+}
+.cur_box3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+    border: 0.94px solid rgb(242, 232, 255);
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    border-radius: 18px;
+    background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+    max-width: 32%;
+}
+#btn1{
+    margin: 30px 0px;
+    color: rgb(100, 200, 255);
+    font-size: 1rem;
+    font-weight: 700;
+    border: none;
+}
+#btn2{
+    margin: 30px 0px;
+    color: rgb(240, 170, 0);
+    font-size: 1rem;
+    font-weight: 700;
+    border: none;
+}
+#btn3{
+    margin: 30px 0px;
+    color: rgb(135, 0, 255);
+    font-size: 1rem;
+    font-weight: 700;
+    border: none;
+}
+
+.arrow_sign{
+    margin-top: 80px;
+    margin-bottom: 60px;
+    display: flex;
+    gap: 10px;
+}
+.arrow_left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: rgb(254, 163, 1);
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+
+}
+.arrow_right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: rgb(254, 163, 1);
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+}
+.arrow_right a{
+    color: white;
+}
+.arrow_left a{
+    color: white;
+}
+
+
+
+
 
 
 
@@ -77,6 +238,8 @@
     
     nav{
         border-bottom: 1px solid rgb(254, 163, 1);
+        padding-bottom: 20px;
+        
     }
     #school_logo_text{
         display: none;
@@ -91,5 +254,44 @@
     .ham_menu img{
         display: block;
     }
+    .banner{
+        flex-direction: column-reverse;
+        margin-bottom: 40px;
+    }
+    .banner_text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 
+    .banner_text h1{
+        text-align: center;
+        font-size: 2.5rem;
+    }
+    .banner_text p{
+        text-align: center;
+        font-size: 1rem;
+    }
+    .sect_title{
+        
+        font-size: 2rem;
+
+    }
+    .curriculum_details{
+        flex-direction: column;
+    }
+    .cur_box1{
+        max-width: 100%;
+    }
+    .cur_box2{
+        max-width: 100%;
+    }
+    .cur_box3{
+        max-width: 100%;
+        margin-bottom: 50px;
+    }
+    .arrow_sign{
+        display: none;
+    }
 }
