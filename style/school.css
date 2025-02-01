@@ -13,6 +13,7 @@
     color: rgb(128, 128, 128);
     font-weight: 500;
 }
+
 .cmn_btn{
     background: rgb(17, 17, 17);
     color: rgb(255, 255, 255);
@@ -21,6 +22,9 @@
     padding: 1.25rem 5rem;
     border: none;
     border-radius: 12px;
+}
+.cmn_btn:hover{
+    background-color: orange;
 }
 .sect_title{
     color: rgb(0, 0, 0);
@@ -103,10 +107,19 @@
     font-weight: 600;
     padding: 10px 50px;
 }
+.cnt_btn:hover{
+    background-color: rgb(1, 172, 253);
+}
 .ham_menu img{
     width: 40px;
     height: 40px;
     display: none;
+}
+.marquee{
+    margin: 0 auto;
+    max-width: 1200px;
+    background: #E8BF60;
+    background: linear-gradient(270deg, #E8BF60, #E5B560);
 }
 /* banner style */
 
@@ -221,6 +234,9 @@
     font-size: 30px;
 
 }
+.arrow_left:hover{
+    background-color: rgb(1, 172, 253);
+}
 .arrow_right{
     display: flex;
     align-items: center;
@@ -231,6 +247,9 @@
     background: rgb(254, 163, 1);
     color: rgb(255, 255, 255);
     font-size: 30px;
+}
+.arrow_right:hover{
+    background-color: rgb(1, 172, 253);
 }
 .arrow_right a{
     color: white;
