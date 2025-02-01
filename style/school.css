@@ -334,6 +334,65 @@
     border-top-right-radius: 16px;
 }
 
+/* footer style */
+footer{
+    max-width: 1440px;
+    background: rgb(1, 172, 253);
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+    padding: 100px 0px;
+}
+.overview{
+    max-width: 400px;
+    padding: 15px;
+    
+}
+.logo_des{
+    display: flex;
+    align-items: center;
+}
+.logo_des img{
+    width: 100%;
+}
+.logo_des h3{
+    color: rgb(255, 255, 255);
+    font-size: 2.65rem;
+    font-weight: 700;
+    margin: 0px;
+}
+.overview p{
+    color: rgb(255, 255, 255);
+    font-size: 1.25rem;
+    font-weight: 400;
+    padding: 10px;
+}
+.about h5{
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding-left: 45px;
+}
+.about li{
+    list-style: none;
+    padding: 10px;
+}
+.about li a{
+    text-decoration: none;
+    text-align: start;
+    color: rgb(255, 255, 255);
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.social h5{
+    font-size: 1.625rem;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+}
+
+
 
 
 
@@ -441,4 +500,12 @@
     .imgbox_container{
         margin-bottom: 20px;
     }
+    footer{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .social{
+        padding: 20px;
+    }
+    
 }
